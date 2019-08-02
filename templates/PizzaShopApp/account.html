@@ -1,0 +1,19 @@
+{% extends 'PizzaShopApp/base.html' %}
+{% load bootstrap4 %}
+{% block page %}
+    <div class="w-100 d-flex justify-content-center">
+        <div class="card">
+            <div class="card-header bg-ruby">
+                <h4 class="card-title text-center text-white">Профиль</h4>
+            </div>
+            <div class="card-body">
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {% bootstrap_form user_form %}
+                    {% bootstrap_form pizza_shop_form %}
+                    <button type="submit" class="btn btn-danger">Обновить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

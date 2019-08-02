@@ -1,0 +1,17 @@
+{% extends 'base_register.html' %}
+{% load bootstrap4 %}
+{% block title %}
+    Войти
+{% endblock %}
+{% block heading %}
+    <p>Пиццерия - страница входа</p>
+{% endblock %}
+{% block page %}
+    <form method="post">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <button type="submit" class="btn btn-danger float-right">Войти</button>
+    </form>
+    <a href="{% url 'sign-up' %}">Зарегистрироваться</a>
+{% endblock %}
+

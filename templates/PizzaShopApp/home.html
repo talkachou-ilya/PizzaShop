@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Главная страница
+{% endblock %}
+{% block page %}
+    <h2>Привет, Пиццерия!</h2>
+    <a href="{% url 'sign-out' %}">Выйти</a>
+{% endblock %}

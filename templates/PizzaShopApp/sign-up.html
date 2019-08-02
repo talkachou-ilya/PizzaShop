@@ -1,0 +1,22 @@
+{% extends 'base_register.html' %}
+{% load static %}
+{% load bootstrap4 %}
+{% block title %}
+    Регистрация
+{% endblock %}
+{% block heading %}
+    <p>Пиццерия - страница регистрации</p>
+{% endblock %}
+{% block page %}
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h4>Владелец</h4>
+        <hr>
+        {% bootstrap_form user_form %}
+        <h4>Пиццерия</h4>
+        <hr>
+        {% bootstrap_form pizza_shop_form %}
+        <button type="submit" class="btn btn-danger float-right">Зарегистрировать</button>
+        <a href="{% url 'sign-in' %}">Уже есть аккаунт?</a>
+    </form>
+{% endblock %}
