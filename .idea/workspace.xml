@@ -44,8 +44,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Profile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Profile">
+      <file leaf-file-name="Procfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="48" selection-start-column="48" selection-end-column="48" />
@@ -689,7 +689,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Profile">
+    <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="48" selection-start-column="48" selection-end-column="48" />
