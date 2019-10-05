@@ -28,7 +28,7 @@
                             <td><a href="{% url 'edit_pizza' pizza.id %}">{{ pizza.name }}</a></td>
                             <td>{{ pizza.short_description }}</td>
                             <td>{{ pizza.price }}</td>
-                            <td class="text-center"><img src="https://raw.githubusercontent.com/Mas4erLomas4er/PizzaShop/master{{ pizza.image.url }}" class="rounded" width="50" height="50"></td>
+                            <td class="text-center"><img src="{{ pizza.image.url }}" class="rounded" width="50" height="50"></td>
                         </tr>
                     {% endfor %}
                     </tbody>
